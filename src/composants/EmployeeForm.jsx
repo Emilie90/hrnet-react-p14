@@ -260,7 +260,21 @@ const EmployeeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    // Vérification que tous les champs obligatoires sont remplis
+    if (
+      !firstName ||
+      !lastName ||
+      !dateOfBirth ||
+      !startDate ||
+      !department ||
+      !street ||
+      !city ||
+      !state ||
+      !zipCode
+    ) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
     const employee = {
       firstName,
       lastName,
