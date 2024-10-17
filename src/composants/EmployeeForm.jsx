@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import EmployeeContext from "../context/EmployeeContext";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Modal from "../composants/Modal";
+import Modal from "components-modal-react/modal";
 
 const EmployeeForm = () => {
   const { addEmployee } = useContext(EmployeeContext);
