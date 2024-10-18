@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# HRnet - Employee Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+HRnet est une application interne utilisée pour gérer les dossiers des employés. Cette application permet d'ajouter des employés via un formulaire et de visualiser la liste des employés ajoutés.
 
-In the project directory, you can run:
+L'application est construite en **React** avec **React Router** pour la gestion des routes, **React Context** pour la gestion de l'état des employés, et utilise **react-data-table-component** pour afficher la liste des employés sous forme de tableau interactif.
 
-### `npm start`
+## Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Ajouter un employé via un formulaire comprenant des informations de base (prénom, nom, date de naissance, date de début, adresse, département).
+- Voir la liste actuelle des employés avec tri et pagination.
+- Confirmation de la création d'un employé via une modal.
+- Persistance des employés dans le `sessionStorage` pour maintenir les données pendant la session.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Structure du projet
 
-### `npm test`
+```bash
+├── src
+│   ├── components
+│   │   └── Modal.jsx            # Composant Modal pour afficher une fenêtre de confirmation
+│   ├── context
+│   │   └── EmployeeContext.jsx  # Gestion du contexte pour stocker et partager les employés
+│   ├── pages
+│   │   ├── EmployeeFormPage.jsx  # Page pour ajouter un employé
+│   │   └── EmployeeListPage.jsx  # Page pour afficher la liste des employés
+│   ├── App.js                   # Fichier principal contenant les routes de l'application
+│   ├── index.js                 # Point d'entrée de l'application React
+│   └── index.css                # Styles globaux de l'application
+├── public
+│   └── index.html               # Fichier HTML de base
+├── README.md                    # Documentation du projet
+└── package.json                 # Dépendances du projet
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prérequis
 
-### `npm run build`
+- Node.js (v12 ou supérieur)
+- npm (v6 ou supérieur)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1 - Cloner le projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+git clone https://github.com/Emilie90/hrnet-react-p14
+```
 
-### `npm run eject`
+2 - Naviguer dans le dossier du projet :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+cd hrnet
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3 - Installer les dépendances :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Lancement de l'application
 
-## Learn More
+1 - Lancer le serveur de développement :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```shell
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2 - Accéder à l'application :
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ouvrez votre navigateur et accédez à http://localhost:3000.
