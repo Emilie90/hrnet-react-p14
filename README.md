@@ -20,7 +20,6 @@ L'application est construite en **React** avec **React Router** pour la gestion 
 │   ├── components
 │   │   └── EmployeeForm.jsx            # Composant pour le formulaire Employee
 │   │   └── EmployeeList.jsx            # Composant pour la liste des employées
-
 │   ├── context
 │   │   └── EmployeeContext.jsx  # Gestion du contexte pour stocker et partager les employés
 │   ├── pages
