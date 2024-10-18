@@ -18,7 +18,9 @@ L'application est construite en **React** avec **React Router** pour la gestion 
 ```bash
 ├── src
 │   ├── components
-│   │   └── Modal.jsx            # Composant Modal pour afficher une fenêtre de confirmation
+│   │   └── EmployeeForm.jsx            # Composant pour le formulaire Employee
+│   │   └── EmployeeList.jsx            # Composant pour la liste des employées
+
 │   ├── context
 │   │   └── EmployeeContext.jsx  # Gestion du contexte pour stocker et partager les employés
 │   ├── pages
